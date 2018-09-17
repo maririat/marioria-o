@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+   espacio = "-------------"
+    person1 = {edad:56, cc:79301536, name:"Mario", apellido:"Riaño", active:false, male:"M"}    
+    person2 = {edad:57, cc:79301537, name:"Mario1", apellido:"Riaño1", active:true, male:"F"}    
+    person3 = {edad:58, cc:79301538, name:"Mario2", apellido:"Riaño2", active:false, male:"M"}    
+    person4 = {edad:59, cc:79301539, name:"Mario3", apellido:"Riaño3", active:true, male:"F", uno:person1}    
+
+    
+    //var dias =[1,2, "LUNES", "MARTES", Boolean(10>9), Boolean(10>11), mes, hora, 9, 10 ];
+    
+    var keys = Object.keys(person1)
+    keys.forEach(key=>console.log(key,person1[key]))
+
+    var keys = Object.keys(person2)
+    keys.forEach(key=>console.log(key,person2[key]))
+
+    var keys = Object.keys(person3)
+    keys.forEach(key=>console.log(key,person3[key]))
+
+    var keys = Object.keys(person4)
+    keys.forEach(key=>console.log(key,person4[key],"\n\n\n"))
+
+    var per1 = [person1, person2, person3, person4]
+    for(var i=0; i<4; i++) 
+    console.log(per1[i])
+    
+    //{alert(per1[i]);}
+   
+    
+    </script>
+
+</head>
+<body>
+   <script>
+
+      
+   
+   </script> 
+</body>
+</html>

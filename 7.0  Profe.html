@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <style>
+        .col {
+            border: 2px solid greenyellow
+        }
+    </style>
+
+    <script>
+        var dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+
+        // function
+
+        // for (k in dias) {
+        //     console.log(dias[k])
+
+        // }
+        // dias.forEach(function(dia) {
+        //     console.log(dia);
+        // })
+        // dias.forEach(dia => console.log(dia))
+
+        var funcionUno = function() {
+                var textoEntrada = document.getElementById("texto-entrada").value;
+                console.log(typeof textoEntrada)
+
+                console.log("Se ejecutò la función uno")
+                var nodo = document.createElement("li");
+
+                var textoNodo = document.createTextNode("Elemento de una lista");
+
+                nodo.appendChild(textoNodo);
+
+                document.getElementById("prueba-lista").appendChild(nodo)
+            }
+            // funcionUno(". Algo màs");
+    </script>
+</head>
+
+<body>
+    <div class="row" id="prueba-uno">
+        <div class="col s1">Lorem ipsun<span> Prueba</span> Lorem ipsun</div>
+        <div class="col s1">2</div>
+        <div class="col s1">3</div>
+        <div class="col s1">4</div>
+        <div class="col s1">5</div>
+        <div class="col s1">6</div>
+        <div class="col s1">7</div>
+        <div class="col s1">8</div>
+        <div class="col s1">9</div>
+        <div class="col s1">10</div>
+        <div class="col s1">11</div>
+        <div class="col s1">12</div>
+    </div>
+
+    <div class="row">
+        <div class="col s12">This div is 12-columns wide on all screen sizes</div>
+        <div class="col s6">6-columns (one-half)</div>
+        <div class="col s6">6-columns (one-half)</div>
+    </div>
+
+    <div class="row">
+        <div class="col s12"><span class="flow-text">This div is 12-columns wide on all screen sizes</span></div>
+        <div class="col s6 offset-s6"><span class="flow-text">6-columns (offset-by-6)</span></div>
+    </div>
+    AAA
+    <input type="radio" id="huey" name="drone" checked />
+    <input type="checkbox" id="cbox1" value="first_checkbox">
+
+    <button onclick="funcionUno()">Click me</button>
+
+    <div class="row">
+        <ol id="prueba-lista">
+            <li>Elemento de una lista</li>
+            <li>Elemento de una lista</li>
+            <li>Elemento de una lista</li>
+            <li>Elemento de una lista</li>
+            <li>Elemento de una lista</li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-10">
+            <input type="text" id="texto-entrada">
+        </div>
+        <div class="col-2">
+            <button onclick="agregarItem()"></button>
+        </div>
+    </div>
+</body>
+
+</html>

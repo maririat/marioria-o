@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p>An ordered list:</p>
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+    
+    <p>An unordered list:</p>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+    
+<button onclick="myFunction()">Seleccione una fruta y borrela</button>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("mySelect");
+    x.remove(x.selectedIndex);
+}
+</script>
+<hr>
+</body>
+</html>

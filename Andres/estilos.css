@@ -1,0 +1,17 @@
+*{font-family: 'Noto Serif JP', sans-serif;}
+.h1,h2{
+    color: red;
+
+}
+p{
+
+    color: blue;
+}
+
+.h3{
+    color: yellow;
+
+}
+li{
+    color: grey;
+}
